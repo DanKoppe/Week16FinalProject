@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react';  //importing dependencies
 import ReactDOM from 'react-dom/client';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); //using get element by id to target our render to the root in our index.html
+root.render(  //rendering our app in our root
   <React.StrictMode>
     <App />
   </React.StrictMode>

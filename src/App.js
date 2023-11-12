@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'; // importing react libary, components class from react module
+import { GamesList } from './components/GamesList'; //importing GamesList component
+import './App.css' //importing css file for styling
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component { //creating react component class called App
+  render() { //calling the render method and returning a <div> with <h1> title and GamesList component
+    return (
+      <div>
+        <h1>Game Reviews</h1>
+        <GamesList />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App; //exporting the app component to be used on the index.js file
