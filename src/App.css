@@ -1,14 +1,14 @@
-body {  /*targeting body element*/
+body {
+  /*targeting body element*/
   background-color: #f8ef02; /*setting background to yellow*/
 }
 
-h1 { /*targeting h1 element*/
+h1 {
+  /*targeting h1 element*/
   text-align: center; /*centering text*/
   font-family: Arial, Helvetica, sans-serif; /*changing font for readability*/
-  margin-bottom: 10px; /*setting bottom margin for spacing*/
   text-shadow: 0 0 10px #630ff6, 0 0 20px #630ff6, 0 0 30px #630ff6; /*text shadow for glow effect*/
   color: #00ffd2; /*text color for neon cyberpunk feel*/
-  background-color: black; /*setting background to black to avoid text/body-background color clashing*/
 }
 
 h3 {
@@ -21,17 +21,19 @@ h3 {
   text-align: center; /*aligning text to center*/
   font-family: Arial, Helvetica, sans-serif; /*changing font for readability*/
   margin-bottom: 10px; /*setting bottom margin for spacing*/
-
 }
 
-.btn { /*targeting all buttons*/
+.btn {
+  /*targeting all buttons*/
   background-color: #2f2f2f; /*background color*/
   color: #00ff55; /*neon green text color*/
   border: 1px solid #00ff55; /*neon green border*/
-  font-family: 'Courier New', monospace; /*different font to give cyberpunk feel*/
+  font-family: "Courier New", monospace; /*different font to give cyberpunk feel*/
   cursor: pointer; /*changing courser on hovor*/
   transition: background-color 0.3s, color 0.3s; /*smoothing transition on color change*/
   max-width: 155px;
+  font-weight: bolder;
+
 }
 
 input {
@@ -48,6 +50,157 @@ ul {
   margin-top: 10px; /*top margin*/
 }
 
-.review-label {
+.review-label { /*size and bold adjustment*/
   font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-copyright { /*sizing and alignment for the footer*/
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.solid-line { /*creating a solid line break*/
+  border-top: 2px solid black;
+}
+
+.Banner { /*banner styling with flexbox, background image, center alignment, padding, margins, text change*/
+  display: flex; 
+  align-items: center; 
+  background-image: url("assets/kevin-laminto-7PqRZK6rbaE-unsplash.jpg");
+  background-size: cover;
+  background-position: center 70%;
+  text-align: center;
+  padding: 100px 0;
+  color: black;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+}
+
+.Logo { /*logo styling with size and margin adjustments*/
+  width: 200px; 
+  height: 101px; 
+  background-image: url("assets/Controller.jpg");
+  background-size: cover;
+  margin-right: 20px; 
+}
+
+.NavLinks { /*navlinks flexbox, with spacing and alignment adjustments*/
+  display: flex;
+  margin-left: auto;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.NavLinks > a { /*styling to the link text for readability on dark background*/
+  font-size: 30px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  color: yellow
+}
+
+.About-container { /*applying flexbox to about container so images stack on small viewports*/
+  display: flex;
+  align-items: flex-start;
+}
+
+.AboutText { /*alignment for about text*/
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AboutTitle { /*alightnment for about title*/
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.AboutImage { /*sizing for about image and order of 1 so images renders to the right of the text*/
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  order: 1;
+}
+
+.SystemsImages { /*flex container with wrap and sizing for about page images*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.SystemsImages img { /*image sizing*/
+  width: 200px;
+  height: auto;
+}
+
+.ContactUsImage { /*image sizing*/
+  width: 100%;
+  height: auto;
+}
+
+.Contact-Us-container { /*contact us flex container that stacks items vertically, centers horizonatally/vertically and aligns them within the container so they stack with smaller viewports*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+}
+
+.ContactTitle { /*sizing and margins for title*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.EmailLink { /*sizing and alignment for email link*/
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.ContactImages { /*flex container and spacing for contact page images*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ContactImages img { /*sizing for contact page images*/
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ReviewText { /*spacing for review text*/
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: -.9%;
+  margin-inline: 5px
+}
+
+.ReviewContainer { /*margin for review container*/
+  margin-bottom: 5px;
+}
+
+.ReviewButton { /*margin for review button*/
+  margin-right: 5px;
+}
+
+.NewGameInput { /*margin for new game input*/
+  margin-right: 5px;
+}
+
+.AddReviewButton { /*margin for add review button*/
+  margin-bottom: 10px;
+}
+
+.NewReviewName { /*margin for new review name*/
+  margin-right: 5px;
 }

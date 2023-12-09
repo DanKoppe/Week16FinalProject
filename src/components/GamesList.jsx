@@ -1,7 +1,7 @@
 import React from 'react';  //importing dependencies including React, Game, GamesAPI, and NewGame Form.
-import { Game } from './Game';
-import { GamesAPI } from './GamesAPI.js';
-import { NewGameForm } from './NewGameForm.js';
+import { Game } from './Game.jsx';
+import { GamesAPI } from './GamesAPI.jsx';
+import { NewGameForm } from './NewGameForm.jsx';
 
 export class GamesList extends React.Component {  //creating an exported react component called GamesList
     state = {  //initializing the component's state with an empty array to hold created games

@@ -38,6 +38,7 @@ export const NewGameForm = (props) => { //exporting new game form function with 
             <h2>Add a new Game:</h2>
             <form onSubmit={onSubmit}>
                 <input
+                    className='NewGameInput'
                     type='text'
                     placeholder='Game name'
                     onChange={(e) => setName(e.target.value)}
